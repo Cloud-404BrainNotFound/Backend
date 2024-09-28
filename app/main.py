@@ -3,11 +3,11 @@ from sqlalchemy.orm import Session
 from app import models
 from app.database import engine, get_db
 from app.models import review, user, order, payment, notification  # 导入所有模型
-from app.routers.user_service import user_router  # 导入用户相关的 router
-from app.routers.review_service import review_router  # 导入评论相关的 router
-from app.routers.order_service import order_router  # 导入订单相关的 router
-from app.routers.payment_service import payment_router  # 导入支付相关的 router
-from app.routers.notification_service import notification_router  # 导入通知相关的 router
+from app.routers.user_service.user_service import user_router  # 导入用户相关的 router
+from app.routers.review_service.review_service import review_router  # 导入评论相关的 router
+from app.routers.order_service.order_service import order_router  # 导入订单相关的 router
+from app.routers.payment_service.payment_service import payment_router  # 导入支付相关的 router
+from app.routers.notification_service.notification_service import notification_router  # 导入通知相关的 router
 
 
 # 创建数据库表
