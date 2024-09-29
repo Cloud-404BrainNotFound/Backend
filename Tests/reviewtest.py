@@ -1,9 +1,14 @@
 import unittest
 import requests
 from datetime import datetime
-
 class TestReviewAPI(unittest.TestCase):
-    base_url = 'http://localhost:8000/reviews'
+
+    base_url = 'http://54.83.149.21:8002/reviews'
+    local = 0
+    if local:
+        base_url = 'http://localhost:8000/reviews'
+    else:
+        base_url = 'http://54.83.149.21:8002/reviews'
     review_id = ''
     user_id = 'uuid-user-1234'
     target_id = 'uuid-product-5678'

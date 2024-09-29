@@ -1,6 +1,11 @@
 import requests
 
-url = 'http://localhost:8000/payments/add_payment'
+url = 'http://54.83.149.21:8003/payments/add_payment'
+local = 0
+if local:
+    url = 'http://localhost:8000/payments/add_payment'
+else:
+    url = 'http://54.83.149.21:8003/payments/add_payment'
 data = {
     "user_id": "123456",
     "order_id": "abc125553",
