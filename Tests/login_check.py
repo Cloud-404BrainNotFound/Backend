@@ -4,7 +4,7 @@ local = 0
 if local:
     url = 'http://localhost:8000/users/login'
 else:
-    url = 'http://54.83.149.21:8004/users/login'
+    url = 'http://54.83.149.21:8001/users/login'
 
 data = {
     'username': 'test_user',

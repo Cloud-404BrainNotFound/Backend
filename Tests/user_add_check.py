@@ -1,6 +1,11 @@
 import requests
 
 url = 'http://localhost:8000/users/add_user'
+local = 0
+if local:
+    url = 'http://localhost:8000/users/add_user'
+else:
+    url = 'http://54.83.149.21:8001/users/add_user'
 data = {
     "username": "tes2t_user",
     "email": "123@example.com",
